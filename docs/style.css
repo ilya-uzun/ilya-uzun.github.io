@@ -10,3 +10,47 @@ blockquote {
     padding: 5px;
     border: 1px solid rgb(45, 119, 27);
 }
+
+/* body{
+    margin:0px;
+    } */
+
+    #header{
+    background:darkred;
+    width:auto;
+    height:100px;
+    }
+    #main{
+        background:rgb(184, 139, 139);
+        width:auto;
+        height:auto;
+        position:absolute; 
+        }
+
+    #content{
+    background:oldlace;
+    width:auto;
+    height:auto;
+    float:left;     
+    }
+    #menu{
+    background:rgb(216, 198, 164);
+    width:190px;
+    height:300px;
+    float:left;  
+    }   
+    #news{
+    background:yellow;
+    width:150px;
+    height:280px;
+    float:right; 
+    margin:10px;
+    
+    }
+    #footer{
+    background:darkred;
+    width:auto;
+    height:30px;
+    
+    }
+  
