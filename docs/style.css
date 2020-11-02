@@ -35,9 +35,10 @@ blockquote {
     }
     #menu{
     background:rgb(216, 198, 164);
-    width:190px;
-    height:300px;
-    float:left;  
+    width:auto;
+    height:auto;
+    position:absolute; 
+    /* float:left;   */
     }   
     #news{
     background:yellow;
