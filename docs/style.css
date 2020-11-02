@@ -14,7 +14,12 @@ blockquote {
 /* body{
     margin:0px;
     } */
-
+/* main{
+    background:rgb(184, 139, 139);
+    width:auto;
+    height:auto;
+    position:absolute; 
+}
     #header{
     background:darkred;
     width:auto;
@@ -33,6 +38,7 @@ blockquote {
     height:auto;
     float:left;     
     }
+
     #menu{
     background:rgb(216, 198, 164);
     width:auto;
@@ -52,6 +58,6 @@ blockquote {
     background:darkred;
     width:auto;
     height:30px;
-    
+     */
     }
   
