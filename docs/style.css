@@ -11,6 +11,18 @@ blockquote {
     border: 1px solid rgb(45, 119, 27);
 }
 
+header{
+    display: flex;
+    height: 120px;
+    color: rgb(161, 89, 89);
+    border: 1px solid rgb(45, 119, 27);
+}
+footer{
+    display: flex;
+    height: 120px;
+    color: rgb(161, 89, 89);
+    border: 1px solid rgb(96, 84, 148)
+}
 /* body{
     margin:0px;
     } */
@@ -31,33 +43,29 @@ blockquote {
         height:auto;
         position:absolute; 
         }
-
     #content{
     background:oldlace;
     width:auto;
     height:auto;
     float:left;     
     }
-
     #menu{
     background:rgb(216, 198, 164);
     width:auto;
     height:auto;
     position:absolute; 
     /* float:left;   */
-    }   
-    #news{
+    /* }    */
+    /* #news{
     background:yellow;
     width:150px;
     height:280px;
     float:right; 
     margin:10px;
-    
     }
     #footer{
     background:darkred;
     width:auto;
     height:30px;
-     */
-    }
+    } */
   
