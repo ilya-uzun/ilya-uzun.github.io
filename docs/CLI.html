@@ -23,50 +23,88 @@
     <noscript><div><img src="https://mc.yandex.ru/watch/68914117" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->      
      
-<h3> DOC </h3> 
-  <p>
-    <br> ls - список файлов     
-    <br> cd - cd путь\к папке  
-    <br> cd  - 
-    <br> g++ Work_S1_1.cpp -o Work - Компиляция в windows             
-    <br> mingw32-make -f Makefile   - запуск Make
-    <h5> Запуск скомпилированной программы</h5> 
-      <br> Work -  запустить 
-      <br> Для использования g++ и Make windows  установить [tdm-gcc](https://jmeubank.github.io/tdm-gcc/)
-      <br> затем прописать в PATH C:\TDM-GCC-64\bin\g++
-  </p>    
+    <header>
+      <div id="header">шапка сайта</div>
+    </header>
+    <main>
+      <div id="menu">меню</div>   
+      <div id="content">
+    
+        <h3> DOC </h3> 
+          <p>
+            <br> ls - список файлов     
+            <br> cd - cd путь\к папке  
+            <br> cd  - 
+            <br> g++ Work_S1_1.cpp -o Work - Компиляция в windows             
+            <br> mingw32-make -f Makefile   - запуск Make
+            <h5> Запуск скомпилированной программы</h5> 
+              <br> Work -  запустить 
+              <br> Для использования g++ и Make windows  установить [tdm-gcc](https://jmeubank.github.io/tdm-gcc/)
+              <br> затем прописать в PATH C:\TDM-GCC-64\bin\g++
+          </p>    
 
-<h3> Cygwin </h3>
-  <p>
-    <br> запуск файла на исполнение  ./name.exe
-    <br> установка новых пакетов apt-cyg packege inslall но сперва установить установщик:
-  </p>    
-    <pre>
-      wget rawgit.com/transcode-open/apt-cyg/master/apt-cyg
-      install apt-cyg /bin
-    </pre>
+        <h3> Cygwin </h3>
+          <p>
+            <br> запуск файла на исполнение  ./name.exe
+            <br> установка новых пакетов apt-cyg packege inslall но сперва установить установщик:
+          </p>    
+            <pre>
+              wget rawgit.com/transcode-open/apt-cyg/master/apt-cyg
+              install apt-cyg /bin
+            </pre>
+            
+        <h3> Linux bash </h3>    
+          <p>
+              <br>  ls -la  - полный список и все файлы (скрытые)
+              <br>  Запуск команды просто - make (в каталоге где нужный Makefile)
+              <br>  pwd   - показывает в какой директории находишься
+              <br>  cd -  - назад на папку 
+          </p>  
+            
+        <h3> bash  </h3>
+            <p>
+              cat утилита выводит содержимое файла на экран ($ cat опции файл1 файл2 ...)   
+            </p>
+            <p>
+              <br> -b - нумеровать только непустые строки;
+              <br> -E - показывать символ $ в конце каждой строки;
+              <br> -n - нумеровать все строки;
+              <br> -s - удалять пустые повторяющиеся строки;
+              <br> -T - отображать табуляции в виде ^I;
+              <br> -h - отобразить справку;
+              <br> -v - версия утилиты.
+            </p>
+        
+      </div>
+      <div id="news">
+        <dl>
+            <dt> Содержание </dt>
+            <dd>  <p><a href="Git.html"> Git </a></p>  </dd>
+            <dd>  <p><a href="C_C++.html"> Cи C++ </a></p>  </dd>
+            <dd>  <p><a href="Atom.html"> Atom</a></p>  </dd>
+            <dd>  <p><a href="CLI.html"> CLI </a></p>  </dd>
+            <dd>  <p><a href="Emacs.html"> Emacs </a></p>  </dd>
+            <dd>  <p><a href="html+css.html"> html+css </a></p>  </dd>
+            <dd>  <p><a href="js.html"> JS</a></p>  </dd>
+            <dd>  <p><a href="LateX.html"> LateX </a></p>  </dd>
+            <dd>  <p><a href="linux.html"> Linux </a></p>  </dd>
+            <dd>  <p><a href="Make_Manual.html"> Make_Manual </a></p>  </dd>
+            <dd>  <p><a href="Markdown.html"> Markdown </a></p>  </dd>
+            <dd>  <p><a href="QT.html"> QT </a></p>  </dd>
+            <dd>  <p><a href="UML.html"> UML </a></p>  </dd>
+            <dd>  <p><a href="Unreal_Engine4.html"> Unreal_Engine4 </a></p>  </dd>
+            <dd>  <p><a href="Vim.html"> Vim </a></p>  </dd>
+            <dd>  <p><a href="Work/Мощность приборов.html"> Мощность приборов </a></p>  </dd>
+            <dd>  <p><a href="Work/ПЛК.html"> ПЛК </a></p>  </dd>
+            <dd>  <p><a href="Work/ПЧ.html">ПЧ  </a></p>  </dd>
+        </dl>
+     
+      </div> 
+    </main>
     
-<h3> Linux bash </h3>    
-  <p>
-      <br>  ls -la  - полный список и все файлы (скрытые)
-      <br>  Запуск команды просто - make (в каталоге где нужный Makefile)
-      <br>  pwd   - показывает в какой директории находишься
-      <br>  cd -  - назад на папку 
-  </p>  
-    
-<h3> bash  </h3>
-    <p>
-      cat утилита выводит содержимое файла на экран ($ cat опции файл1 файл2 ...)   
-    </p>
-    <p>
-       <br> -b - нумеровать только непустые строки;
-       <br> -E - показывать символ $ в конце каждой строки;
-       <br> -n - нумеровать все строки;
-       <br> -s - удалять пустые повторяющиеся строки;
-       <br> -T - отображать табуляции в виде ^I;
-       <br> -h - отобразить справку;
-       <br> -v - версия утилиты.
-    </p>
+    <footer>
+      <div id="footer">низ сайта</div>  
+    </footer> 
 
   </body>
 </html>
