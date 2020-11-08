@@ -1,5 +1,5 @@
 
-p {
+#paragraph {
     margin: 10px 0;
     padding: 5px;
     border: 1px solid #999;
@@ -32,13 +32,13 @@ main{
     } 
 #content{
     background:oldlace;
-    width: 80%;
+    width: 60%;
     height:auto;
     float:left;     
     }
-#news{
-    background:rgb(129, 207, 142);
-    width:300px;
+#teble{
+    background:rgb(166, 170, 167);
+    width:400px;
     height:900px;
     float:right; 
     margin:1px;
