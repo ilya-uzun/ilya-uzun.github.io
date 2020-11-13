@@ -23,51 +23,89 @@
     <noscript><div><img src="https://mc.yandex.ru/watch/68914117" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
   
-#### QWidget   
-Виджет, пустая прямоуголная область. Базовый объект для всех интерфесных объектов.
-Наследник QtCore.QObject, QtGui.QPaintDevice.    
+  <header>
+    <div id="header">шапка сайта</div>
+  </header>
+  <main>
+    <div id="menu">меню</div>   
+    <div id="content">
+  
+      #### QWidget   
+        Виджет, пустая прямоуголная область. Базовый объект для всех интерфесных объектов.
+        Наследник QtCore.QObject, QtGui.QPaintDevice.    
 
-```
- class QWidget([parent=None][, flags=Qt.Widget])     
-```
- #### преобразовываем int в QString    
- ```QString dec = QString::number(bc);```   
- 
- ### C++ c Qt и QML
- 
-#### Cоздаём    
-> Qt Quick Applicacation - Empty   
+        ```
+        class QWidget([parent=None][, flags=Qt.Widget])     
+        ```
+        #### преобразовываем int в QString    
+        ```QString dec = QString::number(bc);```   
+        
+        ### C++ c Qt и QML
+        
+        #### Cоздаём    
+        > Qt Quick Applicacation - Empty   
 
-> qml.qrc - файл ресурсов   
+        > qml.qrc - файл ресурсов   
 
-<<<<<<< HEAD
+        <<<<<<< HEAD
 
-### элеметы 
+        ### элеметы 
 
-> QTextEdit - текстовое поле 
-> QLineEdit - текстова строка
-=======
-#### Методы
-> QComboBox — класс выпадающего списка.    
-> QCheckBox — класс флажка (чекера).    
-> QTextEdit — класс многострочного поля ввода. Используется как для редактирования, так и для представления текста. Содержит очень богатые возможности по представлению документов за счет выделения функций специальных компоновщиков документов в отдельные классы.     
+        > QTextEdit - текстовое поле 
+        > QLineEdit - текстова строка
+        =======
+        #### Методы
+        > QComboBox — класс выпадающего списка.    
+        > QCheckBox — класс флажка (чекера).    
+        > QTextEdit — класс многострочного поля ввода. Используется как для редактирования, так и для представления текста. Содержит очень богатые возможности по представлению документов за счет выделения функций специальных компоновщиков документов в отдельные классы.     
 
 
-#### Компановщик
-[Инфа](http://knzsoft.ru/qt-bgr-ls2/)
+        #### Компановщик
+        [Инфа](http://knzsoft.ru/qt-bgr-ls2/)
 
-#### QMainWindow содержит;
-> QToolBars (панели инструментов)     
-> QDockWidgets (стыкуемые окна)     
-> QMenuBar (строка меню)     
-> QStatusBar (строка статуса)    
+        #### QMainWindow содержит;
+        > QToolBars (панели инструментов)     
+        > QDockWidgets (стыкуемые окна)     
+        > QMenuBar (строка меню)     
+        > QStatusBar (строка статуса)    
 
-#### Создание пользовательского widget
-1. Элемент Widget    
-2. Выбрать Promote to..      
-3. Наследовать от класса QWidgit      
-4. В Promoted class name: вписать имя нужного класса       
-5. Выбрать и нажвть кнопку Promote     
+        #### Создание пользовательского widget
+        1. Элемент Widget    
+        2. Выбрать Promote to..      
+        3. Наследовать от класса QWidgit      
+        4. В Promoted class name: вписать имя нужного класса       
+        5. Выбрать и нажвть кнопку Promote     
+      
+    </div>
+    <div id="news">
+      <dl>
+          <dt> Содержание </dt>
+          <dd>  <p><a href="Git.html"> Git </a></p>  </dd>
+          <dd>  <p><a href="C_C++.html"> Cи C++ </a></p>  </dd>
+          <dd> <p> <a href="gdb.html"> gdb </a></p> </dd>
+          <dd>  <p><a href="Atom.html"> Atom</a></p>  </dd>
+          <dd>  <p><a href="CLI.html"> CLI </a></p>  </dd>
+          <dd>  <p><a href="Emacs.html"> Emacs </a></p>  </dd>
+          <dd>  <p><a href="html+css.html"> html+css </a></p>  </dd>
+          <dd>  <p><a href="js.html"> JS</a></p>  </dd>
+          <dd>  <p><a href="LateX.html"> LateX </a></p>  </dd>
+          <dd>  <p><a href="linux.html"> Linux </a></p>  </dd>
+          <dd>  <p><a href="Make_Manual.html"> Make_Manual </a></p>  </dd>
+          <dd>  <p><a href="Markdown.html"> Markdown </a></p>  </dd>
+          <dd>  <p><a href="UML.html"> UML </a></p>  </dd>
+          <dd>  <p><a href="Unreal_Engine4.html"> Unreal_Engine4 </a></p>  </dd>
+          <dd>  <p><a href="Vim.html"> Vim </a></p>  </dd>
+          <dd>  <p><a href="Work/Мощность приборов.html"> Мощность приборов </a></p>  </dd>
+          <dd>  <p><a href="Work/ПЛК.html"> ПЛК </a></p>  </dd>
+          <dd>  <p><a href="Work/ПЧ.html">ПЧ  </a></p>  </dd>
+      </dl>
+   
+    </div> 
+  </main>
+  
+  <footer>
+    <div id="footer">низ сайта</div>  
+  </footer> 
 
 </body>
 </html>
