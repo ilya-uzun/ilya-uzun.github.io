@@ -1,41 +1,111 @@
-### настройка ПВЧ3 горелка фггжр-850(450).   
-> 1-20 5.5квт.    
-> 1-22 400 В.   
-> 1-23 155 Гц.   
-> 1-24 8.3 А.      
-> 1-25 9000 об/мин.     
-> 3-02 0 мин задание.     
-> 3-03 155 мах задание.    
-> 3-41 (3-42) 10 сек.   
-> 4-14 [155] max частота.     
-> 5-12 [0]  функция дискретного входа K 27 (для запуска ПЧ без перемычки 12-27).       
-> 5-40 для первого реле [0]-5, для второго [1]-2.(где-[] номер реле).     
-> 8-02 [1] RS485 (FC Port).       
-> 8-04 [2] останов при обрыве связи.  
-> 8-30 [2] протокол modbus.       
-> 8-32 [9600] скорость соединения Modbus.   
+ 
 
 
-### MSVector для  ФГГ-0,35-М (ФГГ-0,55)
-> P100 [1].     
-> P101 [2].     
-> P102 [0] - минимальная частота .         
-> P103 [190] - максимальная частота.     
-> P104 (105) [5] - время разгона (тормажения).       
-> P110 [1] - затем перезагрузить ПЧ, старая версия [3]    .    
-> P111 [0]          
-> P121 [0].    
-> P122 [0].    
-> P123 [0].      
-> P140 [3]     
-> P160 [0]      
-> P161 [190] Гц      
-> P163 [2]    
-> P164 [4,5] - старт с 4,5 mA      
-> P167 [190] Гц     
-> P300 [1]      
-> P302 [380]      
-> P303 [4.5]    
-> P304 [190] Гц    
-> P305 [6000]    
-> P306 [0,8]    
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <mate name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gdb </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(68914117, "init", {
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true,
+          webvisor:true
+      });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/68914117" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter --> 
+<header>
+  <div id="header">шапка сайта</div>
+</header>
+<main>
+  <div id="menu">меню</div>   
+  <div id="content">
+
+    <h3> Hастройка ПВЧ3 горелка фггжр-850(450).</h3>
+        <p>
+            <br> 1-20 5.5квт.    
+            <br> 1-22 400 В.   
+            <br> 1-23 155 Гц.   
+            <br> 1-24 8.3 А.      
+            <br> 1-25 9000 об/мин.     
+            <br> 3-02 0 мин задание.     
+            <br> 3-03 155 мах задание.    
+            <br> 3-41 (3-42) 10 сек.   
+            <br> 4-14 [155] max частота.     
+            <br> 5-12 [0]  функция дискретного входа K 27 (для запуска ПЧ без перемычки 12-27).       
+            <br> 5-40 для первого реле [0]-5, для второго [1]-2.(где-[] номер реле).     
+            <br> 8-02 [1] RS485 (FC Port).       
+            <br> 8-04 [2] останов при обрыве связи.  
+            <br> 8-30 [2] протокол modbus.       
+            <br> 8-32 [9600] скорость соединения Modbus. 
+        </p>
+
+    <h3> MSVector для  ФГГ-0,35-М (ФГГ-0,55) </h3>
+        <p> 
+            <br> P100 [1].     
+            <br> P101 [2].     
+            <br> P102 [0] - минимальная частота .         
+            <br> P103 [190] - максимальная частота.     
+            <br> P104 (105) [5] - время разгона (тормажения).       
+            <br> P110 [1] - затем перезагрузить ПЧ, старая версия [3]    .    
+            <br> P111 [0]          
+            <br> P121 [0].    
+            <br> P122 [0].    
+            <br> P123 [0].      
+            <br> P140 [3]     
+            <br> P160 [0]      
+            <br> P161 [190] Гц      
+            <br> P163 [2]    
+            <br> P164 [4,5] - старт с 4,5 mA      
+            <br> P167 [190] Гц     
+            <br> P300 [1]      
+            <br> P302 [380]      
+            <br> P303 [4.5]    
+            <br> P304 [190] Гц    
+            <br> P305 [6000]    
+            <br> P306 [0,8]  
+        </p>
+ 
+  </div>
+
+  <div id="news">
+    <dl>
+        <dt> Содержание </dt>
+        <dd>  <p><a href="Git.html"> Git </a></p>  </dd>
+        <dd>  <p><a href="C_C++.html"> Cи C++ </a></p>  </dd>
+        <dd>  <p><a href="Atom.html"> Atom</a></p>  </dd>
+        <dd>  <p><a href="CLI.html"> CLI </a></p>  </dd>
+        <dd>  <p><a href="Emacs.html"> Emacs </a></p>  </dd>
+        <dd>  <p><a href="html+css.html"> html+css </a></p>  </dd>
+        <dd>  <p><a href="js.html"> JS</a></p>  </dd>
+        <dd>  <p><a href="LateX.html"> LateX </a></p>  </dd>
+        <dd>  <p><a href="linux.html"> Linux </a></p>  </dd>
+        <dd>  <p><a href="Make_Manual.html"> Make_Manual </a></p>  </dd>
+        <dd>  <p><a href="Markdown.html"> Markdown </a></p>  </dd>
+        <dd>  <p><a href="QT.html"> QT </a></p>  </dd>
+        <dd>  <p><a href="UML.html"> UML </a></p>  </dd>
+        <dd>  <p><a href="Unreal_Engine4.html"> Unreal_Engine4 </a></p>  </dd>
+        <dd>  <p><a href="Vim.html"> Vim </a></p>  </dd>
+        <dd>  <p><a href="Work/Мощность приборов.html"> Мощность приборов </a></p>  </dd>
+        <dd>  <p><a href="Work/ПЛК.html"> ПЛК </a></p>  </dd>
+    </dl>
+ 
+  </div> 
+</main>
+
+<footer>
+  <div id="footer">низ сайта</div>  
+</footer>
+</body>
+</html>

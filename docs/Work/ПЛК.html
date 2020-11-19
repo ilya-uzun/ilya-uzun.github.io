@@ -1,53 +1,116 @@
-### Вход в сервесний режим ПЛК 63
-> ввод + стрелочки вверх.     
-> вход + выход
 
-### Горелка ФГЖР-450 (850)
-> вход в сервисный режим F2, затем alt+F2     
-> пароль для сервисного режима 32 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <mate name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gdb </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-### Сафар 400-БГ горелка ФГГ-550
-> Последняя версия r83 2019-06-02     
-##### инструкция    
-1. Подать питание XT2     
-2. Разъём для rs-485 (XT6)     
-3. В настройках Сафара, вход кнопкой "Esc", меню "настройка":  
-3.1 продменю "смена прошивки", кнопка "ввод";     
-3.2 потвердить, кнопка "ввод";
-4. Включить программу STM (STMprog)
-> Внимание! файлы "Platform1"  и "STMprog" должны находится в одной папке    
-5. Нажать "Программировать", затем САФАР-400.
-6. Настройка скорости для rs-458 115200 в диспечере устройств windows
+      ym(68914117, "init", {
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true,
+          webvisor:true
+      });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/68914117" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter --> 
+<header>
+  <div id="header">шапка сайта</div>
+</header>
+<main>
+  <div id="menu">меню</div>   
+  <div id="content">
 
+    ### Вход в сервесний режим ПЛК 63
+    > ввод + стрелочки вверх.     
+    > вход + выход
+    
+    ### Горелка ФГЖР-450 (850)
+    > вход в сервисный режим F2, затем alt+F2     
+    > пароль для сервисного режима 32 
+    
+    ### Сафар 400-БГ горелка ФГГ-550
+    > Последняя версия r83 2019-06-02     
+    ##### инструкция    
+    1. Подать питание XT2     
+    2. Разъём для rs-485 (XT6)     
+    3. В настройках Сафара, вход кнопкой "Esc", меню "настройка":  
+    3.1 продменю "смена прошивки", кнопка "ввод";     
+    3.2 потвердить, кнопка "ввод";
+    4. Включить программу STM (STMprog)
+    > Внимание! файлы "Platform1"  и "STMprog" должны находится в одной папке    
+    5. Нажать "Программировать", затем САФАР-400.
+    6. Настройка скорости для rs-458 115200 в диспечере устройств windows
+    
+    
+    ### Siemens s-1200 и панель KTP400 Basic     
+    #### Настройка и заливка панели
+    1. > Сперва настроить сеть Ethernet на ПК     
+    Настройки сети:     
+    > 192.168.0.5 (адрес может быть любой не совпадающий с адресами ПЛК и Панели)    
+    > 255.255.255.0 -  маска 
+    > 192.168.0.1 - хост     
+    
+    2. > Настройки панели в Settings ->  Network & interfece       
+    > 192.168.0.11 - адрес по умолчанию
+    > 255.255.255.0 - маска    
+    > 192.168.0.1 - хост    
+    
+    3. > Settings -> Transfer Settings    
+    > Убрать галочку, последнюю, т.к. из версии TIA v13 панел пишется с ошибкой    
+    
+    4. > Нажать  Transfer
+    
+    5. > В TIA v13       
+    5.1 Правай кнопкой на вкладке панели.    
+    5.2 Compile -> Herdware and software (only changes)     
+    5.3 Download to device -> Software     
+    5.4 Затем подключить панель.     
+    
+    #### Настройка и завливка ПЛК    
+    1. > В TIA v13       
+    1.1 Правай кнопкой на вкладке ПЛК.    
+    1.2 Compile -> Herdware and software (only changes).       
+    1.3 Download to device -> Herdware and software (only changes)     
+    1.4 Затем подключить ПЛК. 
+     
+  </div>
+  <div id="news">
+    <dl>
+        <dt> Содержание </dt>
+        <dd>  <p><a href="Git.html"> Git </a></p>  </dd>
+        <dd>  <p><a href="C_C++.html"> Cи C++ </a></p>  </dd>
+        <dd>  <p><a href="Atom.html"> Atom</a></p>  </dd>
+        <dd>  <p><a href="CLI.html"> CLI </a></p>  </dd>
+        <dd>  <p><a href="Emacs.html"> Emacs </a></p>  </dd>
+        <dd>  <p><a href="html+css.html"> html+css </a></p>  </dd>
+        <dd>  <p><a href="js.html"> JS</a></p>  </dd>
+        <dd>  <p><a href="LateX.html"> LateX </a></p>  </dd>
+        <dd>  <p><a href="linux.html"> Linux </a></p>  </dd>
+        <dd>  <p><a href="Make_Manual.html"> Make_Manual </a></p>  </dd>
+        <dd>  <p><a href="Markdown.html"> Markdown </a></p>  </dd>
+        <dd>  <p><a href="QT.html"> QT </a></p>  </dd>
+        <dd>  <p><a href="UML.html"> UML </a></p>  </dd>
+        <dd>  <p><a href="Unreal_Engine4.html"> Unreal_Engine4 </a></p>  </dd>
+        <dd>  <p><a href="Vim.html"> Vim </a></p>  </dd>
+        <dd>  <p><a href="Work/Мощность приборов.html"> Мощность приборов </a></p>  </dd>
+        <dd>  <p><a href="Work/ПЧ.html">ПЧ  </a></p>  </dd>
+    </dl>
+ 
+  </div> 
+</main>
 
-### Siemens s-1200 и панель KTP400 Basic     
-#### Настройка и заливка панели
-1. > Сперва настроить сеть Ethernet на ПК     
-Настройки сети:     
-> 192.168.0.5 (адрес может быть любой не совпадающий с адресами ПЛК и Панели)    
-> 255.255.255.0 -  маска 
-> 192.168.0.1 - хост     
-
-2. > Настройки панели в Settings ->  Network & interfece       
-> 192.168.0.11 - адрес по умолчанию
-> 255.255.255.0 - маска    
-> 192.168.0.1 - хост    
-
-3. > Settings -> Transfer Settings    
-> Убрать галочку, последнюю, т.к. из версии TIA v13 панел пишется с ошибкой    
-
-4. > Нажать  Transfer
-
-5. > В TIA v13       
-5.1 Правай кнопкой на вкладке панели.    
-5.2 Compile -> Herdware and software (only changes)     
-5.3 Download to device -> Software     
-5.4 Затем подключить панель.     
-
-#### Настройка и завливка ПЛК    
-1. > В TIA v13       
-1.1 Правай кнопкой на вкладке ПЛК.    
-1.2 Compile -> Herdware and software (only changes).       
-1.3 Download to device -> Herdware and software (only changes)     
-1.4 Затем подключить ПЛК. 
-
+<footer>
+  <div id="footer">низ сайта</div>  
+</footer>
+</body>
+</html>
