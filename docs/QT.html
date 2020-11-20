@@ -30,52 +30,66 @@
     <div id="menu">меню</div>   
     <div id="content">
   
-      #### QWidget   
-        Виджет, пустая прямоуголная область. Базовый объект для всех интерфесных объектов.
-        Наследник QtCore.QObject, QtGui.QPaintDevice.    
+      <h3> QWidget   </h3>
+        <p>
+          <br> Виджет, пустая прямоуголная область. Базовый объект для всех интерфесных объектов.
+          <br> Наследник QtCore.QObject, QtGui.QPaintDevice.    
+          <code>
+          class QWidget([parent=None][, flags=Qt.Widget])     
+          </code>
+        </p>
 
-        ```
-        class QWidget([parent=None][, flags=Qt.Widget])     
-        ```
-        #### преобразовываем int в QString    
-        ```QString dec = QString::number(bc);```   
-        
-        ### C++ c Qt и QML
-        
-        #### Cоздаём    
-        > Qt Quick Applicacation - Empty   
+        <h3> преобразовываем int в QString   </h3> 
+          <p>
+            <code>
+              QString dec = QString::number(bc);
+            </code> 
+          </p>
+    
+        <h3> C++ c Qt и QML  </h3>   
+        <h4> Cоздаём     </h4>
+          <p>
+            <br> Qt Quick Applicacation - Empty   
+            <br> qml.qrc - файл ресурсов  
+          </p>
 
-        > qml.qrc - файл ресурсов   
+        <h3> элеметы  </h3>
+          <p>
+            <br> QTextEdit - текстовое поле 
+            <br> QLineEdit - текстова строка
+          </p>
 
-        <<<<<<< HEAD
+        <h3>Методы </h3>
+          <p>
+            <br>  QComboBox — класс выпадающего списка.    
+            <br>  QCheckBox — класс флажка (чекера).    
+            <br>  QTextEdit — класс многострочного поля ввода. Используется как для редактирования, 
+            так и для представления текста. Содержит очень богатые возможности по представлению документов 
+            за счет выделения функций специальных компоновщиков документов в отдельные классы.         
+          </p>
 
-        ### элеметы 
+        <h3>Компановщик </h3>
+          <p>
+            <a href="http://knzsoft.ru/qt-bgr-ls2/">Инфа </a> 
+          </p>
 
-        > QTextEdit - текстовое поле 
-        > QLineEdit - текстова строка
-        =======
-        #### Методы
-        > QComboBox — класс выпадающего списка.    
-        > QCheckBox — класс флажка (чекера).    
-        > QTextEdit — класс многострочного поля ввода. Используется как для редактирования, так и для представления текста. Содержит очень богатые возможности по представлению документов за счет выделения функций специальных компоновщиков документов в отдельные классы.     
+        <h5>QMainWindow содержит; </h5>
+          <p>
+            <br> QToolBars (панели инструментов)     
+            <br> QDockWidgets (стыкуемые окна)     
+            <br> QMenuBar (строка меню)     
+            <br> QStatusBar (строка статуса)   
+          </p>
 
-
-        #### Компановщик
-        [Инфа](http://knzsoft.ru/qt-bgr-ls2/)
-
-        #### QMainWindow содержит;
-        > QToolBars (панели инструментов)     
-        > QDockWidgets (стыкуемые окна)     
-        > QMenuBar (строка меню)     
-        > QStatusBar (строка статуса)    
-
-        #### Создание пользовательского widget
-        1. Элемент Widget    
-        2. Выбрать Promote to..      
-        3. Наследовать от класса QWidgit      
-        4. В Promoted class name: вписать имя нужного класса       
-        5. Выбрать и нажвть кнопку Promote     
-      
+        <h3> Создание пользовательского widget </h3>
+          <ol>
+              <li> Элемент Widget </li>
+              <li> Выбрать Promote to.. </li>
+              <li> Наследовать от класса QWidgit </li>
+              <li> В Promoted class name: вписать имя нужного класса  </li>
+              <li> Выбрать и нажвть кнопку Promote </li>
+          </ol>
+           
     </div>
     <div id="news">
       <dl>
