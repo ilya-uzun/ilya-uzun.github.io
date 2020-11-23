@@ -29,51 +29,57 @@
     <main>
       <div id="menu">меню</div>   
       <div id="content">
-    
-        ### Копирование репозитория
-Windows - в консоле Git bash (необходимо установить [Git bash](https://gitforwindows.org/))команда:
-> git clone + адрес репозитория - скопировать репозиторий на пк
+          <h3> Копирование репозитория </h3>
+            <br> Windows - в консоле Git bash (необходимо установить <a href="https://gitforwindows.org/)"> команда: Git bash </a>
+            <br> git clone + адрес репозитория - скопировать репозиторий на пк
 
-### конфигурации 
-$ git config --global user.name "ilya-uzun"    
-$ git config --global user.email ilya.uzun@bk.ru   
+          <h3> Конфигурации  </h3>           
+            <br> $ git config --global user.name "ilya-uzun"    
+            <br> $ git config --global user.email ilya.uzun@bk.ru 
 
-### смена пользователя или ошибка 403
->git config --global credential.github.com.interactive always     
->теперь пушим и вводим новые логин/пароль     
+          <h3> Смена пользователя или ошибка 403 </h3>        
+            <br> git config --global credential.github.com.interactive always     
+            <br> теперь пушим и вводим новые логин/пароль     
 
-### Находясь в скаченном репозитории команды:
-> git status - статус проекта
+          <h3> Находясь в скаченном репозитории команды: </h3>
+           <br> git status - статус проекта
 
-### Добавление файла в репозиторий    
-1. git add name.tapy - синхронизировать изменения перед добавлением (файл на ПК)    
-    1.1. git add -A - несколько файлов
-2. git commit -m "Описать изменения" - добавит сохранение и описание изменений (файл на ПК)
-3. git push - добавить в облако
+          <h3> Добавление файла в репозиторий  </h3>
+            <ol>
+              <li> git add name.tapy - синхронизировать изменения перед добавлением (файл на ПК) 
+                <ol>
+                  <li> giyt add -A - несколько файлов</li><!-1.1.>
+                </ol>
+              </li><!-1.->
+              <li> git commit -m "Описать изменения" - добавит сохранение и описание изменений (файл на ПК) </li><!-2.->
+              <li> git push - добавить в облако </li><!-3.->
+            </ol>
 
-### Скачать изменения в репозитории на ПК
-> git pull
+          <h3> Скачать изменения в репозитории на ПК </h3>
+            <br> git pull
+            
+          <h3> Добавление изменений </h3>
+            <ol>
+              <li> git clone + адрес, если требуется</li>
+              <li> git add -A </li>
+              <li> git commit -m "Описать изменения" - По Русски почему-то не понимает </li>
+              <li> git pushа  </li>
+            </ol>
 
-### Добавление изменений
-1. git clone + адрес, если требуется
-2. git add -A
-3. git commit -m "Описать изменения" - По Русски почему-то не понимает
-4. git push
 
-### Посчитать количество строк в файлах     
-> git ls-files | xargs wc -l
+          <h3> Посчитать количество строк в файлах  </h3> 
+            <br> > git ls-files | xargs wc -l
+            <a href="https://askdev.ru/q/kak-sohranit-imya-polzovatelya-i-parol-v-git-5753/">ссылка </a>
+        
+          <h3> Настройки лежат в каждом каталоге в .git/config </h3>
+            <a href="https://habr.com/ru/post/174467/"> Статья Ежедневная работа в Git </a>
+          
+          <h3> Запись в оригинальную ветку, что-бы отоброжались коммиты  </h3>   
+            <br>git push -u origin master
 
-[ссылка](https://askdev.ru/q/kak-sohranit-imya-polzovatelya-i-parol-v-git-5753/)
-
-### настройки лежат в каждом каталоге в .git/config
-
-[статья Ежедневная работа в Git](https://habr.com/ru/post/174467/)
-
-### запись в оригинальную ветку, что-бы отоброжались коммиты      
->git push -u origin master
-
-#### GitHub Pages
-[ссылка](https://ru.hexlet.io/courses/html/lessons/github/theory_unit)
+          <h3> GitHub Pages </h3>
+            <a href="https://ru.hexlet.io/courses/html/lessons/github/theory_unit"> Ссылка </a>
+ 
         
       </div>
       <div id="news">
