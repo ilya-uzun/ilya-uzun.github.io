@@ -31,14 +31,13 @@
     <div id="menu">меню</div>   
     <div id="content">
   
-       ## Установка
-        [ссылка](https://www.youtube.com/watch?v=DkvuTSSCxSQ)
+       <h3>Установка </h3>
+        <a href="https://www.youtube.com/watch?v=DkvuTSSCxSQ)"> ссылка </a>
+        <br> <code> skinparam dpi 300 </code>- команда для хорошего качества изображения    
+        <br> <code> kinparam shadowing false </code>  - убирает тени
 
-        - skinparam dpi 300 - команда для хорошего качества изображения    
-        - kinparam shadowing false - убирает тени
-
-        ### Пример для блок-схемы
-        ~~~
+    <h3> Пример для блок-схемы </h3>
+      <pre>
         start
         :Вывалить мысли
         в текст;
@@ -49,29 +48,36 @@
             else (Нет)
                 :Помедитировать над текстом;
             endif
-            :Разместить на //Хабре//;
+              Разместить на //Хабре//;
         else (Точно)
             stop
         endif
         stop
-        ~~~
-        ###  
+      </pre> 
+          
+        <table>
+          <tr> 
+            <th> + </th>
+            <th> public </th>
+          </tr>
+          <tr> 
+            <th> - </th>
+            <th> private </th>
+          </tr>
+          <tr> 
+            <th> # </th>
+            <th> protected </th>
+          </tr>
+        </table>
 
-          |
-        -- | ---------
-        +  | public
-        -  | private
-        `#`| protected
+        <h3>Линии </h3>
+          <br> <code> o-- </code>  - агрегация
+          <br> <code> <|-- </code> - наследование
 
-
-        ### Линии
-        `o--` - агрегация
-        `<|--` - наследование
-
-        ### Комментарии
-        note left of main #while: Комментарий.
-        >  где left - положенеи слево
-        > #while - цвет
+        <h3> Комментарии </h3>      
+          <br> <code> note left of main #while: </code>    Комментарий.
+          <br> где left - положенеи слево
+          <br> <code> #while </code>  - цвет
       
     </div>
     <div id="news">
