@@ -23,6 +23,38 @@
    a:hover {
     border: 1px solid red; /* Красная рамка при наведении курсора на ссылку */
    }
+
+    /* Cсылку */
+   .btn-6 {
+    /* $btn-color: random-color($max:200);
+    $btn-color-dark: shade($btn-color, 40%); */
+    color: #77334a;
+   }
+    span {
+      position: absolute;
+      display: block;
+      /* @include size(0); */
+      border-radius: 50%;
+      background-color: #390919;
+      transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+    
+    /* &:hover {
+      color: tint($btn-color, 75%);
+      
+      span {
+        @include size(225%, $btn-width*2.25);
+      }
+    }
+    
+    &:active {
+      background-color: $btn-color;
+    }
+  } */
+
+
    .blok{
     background: #3546e0; /* Цвет фона */
     width: 100px; /* Ширина */
