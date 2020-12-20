@@ -1,4 +1,4 @@
-body {
+   body {
     font: 14pt Arial, Helvetica, sans-serif; /* Рубленый шрифт текста */
     margin: 0; /* Отступы на странице */
    }
@@ -11,10 +11,17 @@ body {
     margin-top: 0; /* Убираем отступ сверху */
     padding-bottom: 12px;
     border-bottom: 20px solid rgb(8, 2, 99);
-  }
-   head { /* Верхний блок */
-    background: ; /* Цвет фона */
-    
+   }
+   /* head { /* Верхний блок */
+   /* background: ; /* Цвет фона */
+   /* } */
+   a {
+    border: 1px solid blue; /* Синяя рамка вокруг ссылок */
+    padding: 2px; /* Поля вокруг текста */
+    text-decoration: none; /* Скрываем подчёркивание */
+   }
+   a:hover {
+    border: 1px solid red; /* Красная рамка при наведении курсора на ссылку */
    }
    .blok{
     background: #3546e0; /* Цвет фона */
@@ -24,7 +31,7 @@ body {
     text-align: center; /* Выравнивание по центру */
     display: inline-block; /* Строчно-блочный элемент */
    }
-   }
+   
    .sidebar { /* Левая колонка */
     float: left; /* Обтекание справа */
     border: 1px solid #333; /* Параметры рамки вокруг */

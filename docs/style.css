@@ -8,7 +8,7 @@
 blockquote {
     margin: 10px 0;
     padding: 5px;
-    border: 1px solid rgb(45, 119, 27);
+    border: 1px solid rgb(45, 119, 27); 
 }
 
 header{
@@ -16,13 +16,13 @@ header{
     height: 120px;
     color: rgb(161, 89, 89);
     border: 1px solid rgb(138, 172, 130);
-}
+    }  
 main{
     display: flex;
     height: auto;
     color: rgb(161, 89, 89);
     border: 1px solid rgb(13, 0, 44); 
-}
+    }
 
 #menu{
     background:rgb(250, 250, 250);
