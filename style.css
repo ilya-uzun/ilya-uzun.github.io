@@ -66,7 +66,7 @@ nav ul li a:hover {
   color: #555;
 }
 
-/* SHIFT */
+/* SHIFT желтый*/
 nav.shift ul li a {
   position:relative;
   z-index: 1;
@@ -96,8 +96,6 @@ nav.shift ul li a:hover:after {
   visibility: visible;
   height: 100%;
 }
-
-
 
 /* Keyframes */
 @-webkit-keyframes fill {
