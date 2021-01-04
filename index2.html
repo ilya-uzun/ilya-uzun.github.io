@@ -47,7 +47,8 @@
 
             buttonPreview.addEventListener('click', function(){
                 const converter = new showdown.Converter(),
-                    preview = document.getElementById('preview');
+                   // preview = document.getElementById('preview');
+                    preview = htReq.getElementById('preview');
                 showdown.setFlavor('github');
 
                 // if(preview && inputTextarea.value) {
