@@ -26,6 +26,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
         <script>
             // Создаём новый объект XMLHttpRequest
+            // Объект XMLHttpRequest (или, как его кратко называют, «XHR») 
+            // даёт возможность из JavaScript делать HTTP-запросы к серверу без перезагрузки страницы.
             var htReq = ('v' == '\v') ? new ActiveXObject ('Microsoft.XMLHTTP') : new XMLHttpRequest ();
             
             function sendReq ()
@@ -40,7 +42,7 @@
             //   if (htReq.readyState == 4) alert (htReq.responseText); // вывод сообщения в отдельном окне
             // }
 
-            var output ='';
+            // var output ='';
             buttonPreview = document.querySelector('#buttonPreview');
 
             buttonPreview.addEventListener('click', function(){
@@ -48,12 +50,12 @@
                     preview = document.getElementById('preview');
                 showdown.setFlavor('github');
 
-                if(preview && inputTextarea.value) {
-                  htReq = converter.makeHtml(inputTextarea.value);
-                    preview.innerHTML = htReq;
-                } else {
-                    preview.innerHTML = "Markdown im Textfeld eingeben und Preview klicken";
-                }
+                // if(preview && inputTextarea.value) {
+                //   htReq = converter.makeHtml(inputTextarea.value);
+                //     preview.innerHTML = htReq;
+                // } else {
+                //     preview.innerHTML = "Markdown im Textfeld eingeben und Preview klicken";
+                // }
             });
 
 
