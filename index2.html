@@ -34,7 +34,7 @@
             {
               htReq.open ('get', 'file.md');
               htReq.onreadystatechange = getReq;
-              htReq.send (null);
+             // htReq.send (null); // времено закаментирую думаю что это обнуляет докумет
 	      const reader = new FileRaeder();
 	      reader.readAsText(htReq, 'windows-1251');
 	      
