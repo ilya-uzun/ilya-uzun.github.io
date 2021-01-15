@@ -54,12 +54,12 @@
 
                 showdown.setFlavor('github');
 
-                // if(preview && inputTextarea.value) {
-                //   htReq = converter.makeHtml(inputTextarea.value);
-                //     preview.innerHTML = htReq;
-                // } else {
-                //     preview.innerHTML = "Markdown im Textfeld eingeben und Preview klicken";
-                // }
+                   if(preview && inputTextarea.value) {
+                   htReq = converter.makeHtml(inputTextarea.value);
+                     preview.innerHTML = htReq;
+                 } else {
+                     preview.innerHTML = "Markdown im Textfeld eingeben und Preview klicken";
+                 }
             });
 
 
