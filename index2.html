@@ -35,6 +35,9 @@
               htReq.open ('get', 'file.md');
               htReq.onreadystatechange = getReq;
               htReq.send (null);
+	      const reader = new FileRaeder();
+	      reader.readAsText(htReq, 'windows-1251');
+	      
             }
             
             // function getReq ()
@@ -47,7 +50,7 @@
 
             buttonPreview.addEventListener('click', function(){
                 const converter = new showdown.Converter(),
-                    preview = htReq.getElementById('preview');
+                    preview = reader.getElementById('preview');
 
                 showdown.setFlavor('github');
 
