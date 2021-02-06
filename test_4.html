@@ -11,9 +11,9 @@
   <!-- multiple Позволяет загрузить несколько файлов одновременно. -->
     <script>
       var request = new XMLHttpRequest;
-      reader.open('GET', 'file.md', true)
+      request.open('GET', 'file.md', true)
 
-      reader.onload = function(event){
+      request.onload = function(event){
         console.log(request.responseText);
       };
       request.send(null);
