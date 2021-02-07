@@ -17,7 +17,7 @@
       request.onload = function(event){
         console.log(request.responseText);
         const preview = document.getElementById('preview');
-        
+        preview = request.responseText;
       };
       request.send(null);
     </script>
