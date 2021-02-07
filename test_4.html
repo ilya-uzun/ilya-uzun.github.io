@@ -7,6 +7,7 @@
     <title>Тест 4</title>
   </head>
   <body> 
+    <div id="preview"></div>
   <!-- <input type="file" id="img" multiple>   -->
   <!-- multiple Позволяет загрузить несколько файлов одновременно. -->
     <script>
@@ -15,6 +16,18 @@
 
       request.onload = function(event){
         console.log(request.responseText);
+
+        const converter = new showdown.Converter(),
+                    preview = document.getElementById('preview');
+                showdown.setFlavor('github');
+
+                if(preview && inputTextarea.value) {
+                    output = converter.makeHtml(inputTextarea.value);
+                    outputTextarea.value = output;
+                    preview.innerHTML = output;
+                } else {
+                    preview.innerHTML = "Markdown im Textfeld eingeben und Preview klicken";
+                }
       };
       request.send(null);
     </script>
