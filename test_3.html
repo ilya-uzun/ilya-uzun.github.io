@@ -9,36 +9,20 @@
   <body> 
   <input type="file" id="your-files" multiple>
     <script>
+      function readFile(input){
+        let file = input.files[0];
 
-    var control = document.getElementById("your-files");
-      control.addEventListener("change", function(event){
-        // Когда происходит изменение элементов управления, значит появились новые файлы
-        var i = 0,
-        files = control.files,
-        len = files.length;
+        let reader = new FileReader();
 
-        for (; i < len; i++){
-          // выведит в консоль информацию о файле
-          console.log("Filename: " + files[i].name);
-          console.log("Type: " + files[i].type);
-          console.log("Size: " + files[i].size + " bytes");
-          // выведет в окна и выведет информацию
-          alert("Filename: " + files[i].name + "\n" + "Type: "  + files[i].type + "\n" + "Size: " + files[i].size + " bytes");
+        reader.readAsText(file);
 
-        }
-      }, false);
-      
-      var form = new FormData();
-      form.append("name", "Илья");
-      form.append("photo", control.files[0]);
-
-      // отправить через xhr
-      var xhr = new XMLHttpRequest();
-      xhr.onload = function(){
-        console.log("Отправка завершена");
-      };
-      xhr.open("post", "/entrypoint", true);
-      xhr.send(form);
+        reader.onload = function(){
+          console.log(reader.result);
+        };
+        reader.onerror= function(){
+          console.log(reader.error);
+        };
+      }
     </script>
   </body>
 </html>
