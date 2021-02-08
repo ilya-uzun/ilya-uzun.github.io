@@ -14,7 +14,7 @@
 <script>
     function onInitFs(fs) {
 
-    fs.root.getFile('log.txt', {}, function(fileEntry) {
+    fs.root.getFile('file.md', {}, function(fileEntry) {
       
       fileEntry.file(function(file) {
          var reader = new FileReader();
