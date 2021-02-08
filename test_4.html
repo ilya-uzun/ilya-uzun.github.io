@@ -8,18 +8,29 @@
   </head>
   <body> 
     <div id="preview"></div>
+    <!-- <textarea> </textarea> -->
   <!-- <input type="file" id="img" multiple>   -->
   <!-- multiple Позволяет загрузить несколько файлов одновременно. -->
-    <script>
-      var request = new XMLHttpRequest;
-      request.open('GET', 'file.md', true)
+<script>
+    function onInitFs(fs) {
 
-      request.onload = function(event){
-        console.log(request.responseText);
-        const preview = document.getElementById('preview');
-        document(request.responseText);
-      };
-      request.send(null);
+    fs.root.getFile('log.txt', {}, function(fileEntry) {
+      
+      fileEntry.file(function(file) {
+         var reader = new FileReader();
+  
+         reader.onloadend = function(e) {
+           var txtArea = document.createElement('textarea');
+           txtArea.value = this.result;
+           document.body.appendChild(txtArea);
+         };
+  
+         reader.readAsText(file);
+      }, errorHandler);
+  
+    }, errorHandler);
+  
+  }
     </script>
   </body>
 </html>
